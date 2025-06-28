@@ -68,16 +68,13 @@ namespace InputHandling
             switch (InputStrategy.InputStrategyType)
             {
                 case InputStrategyType.InputBindings:
-                    if (InputStrategy.GetInputLogic(playerMovement) is InputBindings bindings)
+                    foreach (var (action, callback) in _bindings)
                     {
-                        foreach (var (action, callback) in _bindings)
-                        {
-                            action.performed -= callback;
-                            action.Disable();
-                        }
-
-                        _bindings.Clear();
+                        action.performed -= callback;
+                        action.Disable();
                     }
+
+                    _bindings.Clear();
                     break;
                 case InputStrategyType.CustomLogic:
                     if (_customLogicCoroutine == null)
