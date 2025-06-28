@@ -1,4 +1,5 @@
 using System;
+using MyBox;
 using UnityEngine;
 
 namespace Player
@@ -15,7 +16,6 @@ namespace Player
     {
         [field: SerializeField] public float MovementSpeed { get; private set; } = 2.0f;
         private Transform _playerTransform;
-
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -23,21 +23,21 @@ namespace Player
         }
 
         //Move in the desired direction
-        void DirectionalMove(MoveDirection direction)
+        public void DirectionalMove(MoveDirection direction)
         {
             switch (direction)
             {
                 case MoveDirection.Left:
-                    _playerTransform.Translate(Vector3.left * MovementSpeed * Time.deltaTime, Space.World);
+                    Debug.Log("Left");
                     break;
                 case MoveDirection.Right:
-                    _playerTransform.Translate(Vector3.right * MovementSpeed * Time.deltaTime, Space.World);
+                    Debug.Log("Right");
                     break;
                 case MoveDirection.Front:
-                    _playerTransform.Translate(Vector3.forward * MovementSpeed * Time.deltaTime, Space.World);
+                    Debug.Log("Front");
                     break;
                 case MoveDirection.Back:
-                    _playerTransform.Translate(Vector3.back * MovementSpeed * Time.deltaTime, Space.World);
+                    Debug.Log("Back");
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(direction), direction, null);

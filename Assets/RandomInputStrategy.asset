@@ -9,43 +9,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88f20874dbe34d35947530c8dc23f2af, type: 3}
-  m_Name: NewInputStrategy
+  m_Script: {fileID: 11500000, guid: b1bc31c102623a34299aed12a55652f0, type: 3}
+  m_Name: RandomInputStrategy
   m_EditorClassIdentifier: 
-  <ShouldUseInputBindings>k__BackingField: 0
-  <PlayerInput>k__BackingField:
+  inputBindings:
     moveLeftAction:
-      m_Name: Move Left
+      m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 7c83f531-d75a-45b6-884f-831f7dc10af5
+      m_Id: c4e165e4-c177-4d7f-9b21-3d2c79a6b0de
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
     moveRightAction:
-      m_Name: Move Right
+      m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 3b9ec442-9000-4a7e-9fed-54a0ed0fb211
+      m_Id: f63b1757-6a39-40a0-a730-8844d3cfa857
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
     moveForwardAction:
-      m_Name: Move Forward
+      m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 54a2bc48-7920-4624-bd4c-b747951e3097
+      m_Id: 90dc7475-cf40-49e1-bce5-67775c391995
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
     moveBackwardAction:
-      m_Name: Move Backward
+      m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 26ca9dc9-df41-4659-b3c9-c5a57375bb72
+      m_Id: 23fb8fb5-d592-44cb-976b-0e1e6a195f45
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
