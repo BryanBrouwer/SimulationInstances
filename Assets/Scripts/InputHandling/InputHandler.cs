@@ -27,8 +27,17 @@ namespace InputHandling
                 case InputStrategyType.InputBindings:
                     if (InputStrategy.GetInputLogic(playerMovement) is InputBindings bindings)
                     {
-                        // Use the bindings here
                         Debug.Log("Using bindings");
+                        //Can make this more dynamic by changing the struct to contain a dictionary of actions using the action as key and the direction as value
+                        bindings.moveLeftAction.performed += context => playerMovement.DirectionalMove(MoveDirection.Left);
+                        bindings.moveRightAction.performed += context => playerMovement.DirectionalMove(MoveDirection.Right);
+                        bindings.moveForwardAction.performed += context => playerMovement.DirectionalMove(MoveDirection.Front);
+                        bindings.moveBackwardAction.performed += context => playerMovement.DirectionalMove(MoveDirection.Back);
+                        
+                        bindings.moveLeftAction.Enable();
+                        bindings.moveRightAction.Enable();
+                        bindings.moveForwardAction.Enable();
+                        bindings.moveBackwardAction.Enable();
                     }
                     break;
                 case InputStrategyType.CustomLogic:

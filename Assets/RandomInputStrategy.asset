@@ -12,40 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1bc31c102623a34299aed12a55652f0, type: 3}
   m_Name: RandomInputStrategy
   m_EditorClassIdentifier: 
-  inputBindings:
-    moveLeftAction:
-      m_Name: 
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: c4e165e4-c177-4d7f-9b21-3d2c79a6b0de
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    moveRightAction:
-      m_Name: 
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: f63b1757-6a39-40a0-a730-8844d3cfa857
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    moveForwardAction:
-      m_Name: 
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 90dc7475-cf40-49e1-bce5-67775c391995
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    moveBackwardAction:
-      m_Name: 
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 23fb8fb5-d592-44cb-976b-0e1e6a195f45
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
+  <WaitTime>k__BackingField: 1
