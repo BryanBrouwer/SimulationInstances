@@ -32,15 +32,13 @@ namespace InputHandling
                 return;
             }
 
-            if (!playerMovement)
-                return;
+            if (!playerMovement) return;
 
             switch (InputStrategy.InputStrategyType)
             {
                 case InputStrategyType.InputBindings:
                     if (InputStrategy.GetInputLogic(playerMovement) is InputBindings bindings)
                     {
-                        Debug.Log("Using bindings");
                         //TODO Can make this more dynamic by also changing the struct contained in the InputStrategy, but for now this if fine for the easier management
                         _bindings.Clear();
                         
@@ -53,7 +51,6 @@ namespace InputHandling
                 case InputStrategyType.CustomLogic:
                     if (InputStrategy.GetInputLogic(playerMovement) is IEnumerator coroutine)
                     {
-                        Debug.Log("Using custom logic");
                         _customLogicCoroutine = coroutine;
                         StartCoroutine(coroutine);
                     }
@@ -77,8 +74,7 @@ namespace InputHandling
                     _bindings.Clear();
                     break;
                 case InputStrategyType.CustomLogic:
-                    if (_customLogicCoroutine == null)
-                        return;
+                    if (_customLogicCoroutine == null) return;
                     StopCoroutine(_customLogicCoroutine);
                     break;
                 default:
