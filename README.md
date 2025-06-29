@@ -20,7 +20,7 @@ The current implementation focuses on a modular architecture, with planned suppo
   Accepts any class derived from the `InputStrategy` base, supporting runtime hotswapping. Two input strategies are currently implemented:
 
   * **Input Bindings Strategy** – maps user input to movement actions.
-  * **Autonomous Input Strategy** – provides random decision-making for automated simulations.
+  * **Random Input Strategy** – provides random decision-making for automated simulations.
 
 * **Objective System**
   A lightweight scoring framework built around an `IObjective` interface. An example implementation, `TouchObjective`, is provided, triggering a score when interacted with, assuming it is enabled and active in the scene.
