@@ -10,74 +10,78 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f203bb836432f64093d0e51280d0596, type: 3}
-  m_Name: NewKeyboardInputStrategy
+  m_Name: AzertyInputStrategy
   m_EditorClassIdentifier: 
-  <InputBindings>k__BackingField:
-    moveLeftAction:
-      m_Name: Move Left
+  inputBindingsList:
+  - key:
+      m_Name: Key
       m_Type: 1
       m_ExpectedControlType: Button
-      m_Id: cbb36f1e-72c0-414e-b315-54b4c8bf01db
+      m_Id: 1977e8c7-62cb-4e63-be71-bb213e7d8edb
       m_Processors: 
-      m_Interactions: Tap
+      m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 3982f778-f336-4cd9-a5ca-a9365ae2fd95
-        m_Path: <Keyboard>/a
+        m_Id: 19e17011-33e6-4c7a-836e-e6d01785fdbb
+        m_Path: <Keyboard>/z
         m_Interactions: 
         m_Processors: 
         m_Groups: 
-        m_Action: Move Left
+        m_Action: Key
         m_Flags: 0
       m_Flags: 0
-    moveRightAction:
-      m_Name: Move Right
+    value: 2
+  - key:
+      m_Name: Key
       m_Type: 1
       m_ExpectedControlType: Button
-      m_Id: d42e02af-329b-43f2-abfc-1e6f193dbbc5
+      m_Id: 1977e8c7-62cb-4e63-be71-bb213e7d8edb
       m_Processors: 
-      m_Interactions: Tap
+      m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 98bf684d-0d26-40f3-9644-d362e247eb1d
-        m_Path: <Keyboard>/d
+        m_Id: 19e17011-33e6-4c7a-836e-e6d01785fdbb
+        m_Path: <Keyboard>/q
         m_Interactions: 
         m_Processors: 
         m_Groups: 
-        m_Action: Move Right
+        m_Action: Key
         m_Flags: 0
       m_Flags: 0
-    moveForwardAction:
-      m_Name: Move Forward
+    value: 0
+  - key:
+      m_Name: Key
       m_Type: 1
       m_ExpectedControlType: Button
-      m_Id: b4494a71-2b8e-427f-b3b3-c1b31e3b7c2f
+      m_Id: 1977e8c7-62cb-4e63-be71-bb213e7d8edb
       m_Processors: 
-      m_Interactions: Tap
+      m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 3ec6e4af-0f7f-4553-bdd0-59f22390b67a
-        m_Path: <Keyboard>/w
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Move Forward
-        m_Flags: 0
-      m_Flags: 0
-    moveBackwardAction:
-      m_Name: Move Backward
-      m_Type: 1
-      m_ExpectedControlType: Button
-      m_Id: dce282f1-e5eb-48f5-b7b6-260fe97d8628
-      m_Processors: 
-      m_Interactions: Tap
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 57a2e26b-48e3-4bca-8bca-7bcabb7d5cb9
+        m_Id: 19e17011-33e6-4c7a-836e-e6d01785fdbb
         m_Path: <Keyboard>/s
         m_Interactions: 
         m_Processors: 
         m_Groups: 
-        m_Action: Move Backward
+        m_Action: Key
         m_Flags: 0
       m_Flags: 0
+    value: 3
+  - key:
+      m_Name: Key
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 1977e8c7-62cb-4e63-be71-bb213e7d8edb
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 19e17011-33e6-4c7a-836e-e6d01785fdbb
+        m_Path: <Keyboard>/d
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Key
+        m_Flags: 0
+      m_Flags: 0
+    value: 1

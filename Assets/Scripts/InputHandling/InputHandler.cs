@@ -37,15 +37,13 @@ namespace InputHandling
             switch (InputStrategy.InputStrategyType)
             {
                 case InputStrategyType.InputBindings:
-                    if (InputStrategy.GetInputLogic(playerMovement) is InputBindings bindings)
+                    if (InputStrategy.GetInputLogic(playerMovement) is Dictionary<InputAction, MoveDirection> bindings)
                     {
-                        //TODO Can make this more dynamic by also changing the struct contained in the InputStrategy, but for now this if fine for the easier management
                         _bindings.Clear();
-                        
-                        RegisterBinding(bindings.moveLeftAction, MoveDirection.Left);
-                        RegisterBinding(bindings.moveRightAction, MoveDirection.Right);
-                        RegisterBinding(bindings.moveForwardAction, MoveDirection.Front);
-                        RegisterBinding(bindings.moveBackwardAction, MoveDirection.Back);
+                        foreach (KeyValuePair<InputAction, MoveDirection> binding in bindings)
+                        {
+                            RegisterBinding(binding.Key, binding.Value);
+                        }
                     }
                     break;
                 case InputStrategyType.CustomLogic:

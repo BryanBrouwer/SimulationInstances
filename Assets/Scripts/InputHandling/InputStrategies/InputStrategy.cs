@@ -1,7 +1,5 @@
-﻿using System;
-using Player;
+﻿using Player;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace InputHandling.InputStrategies
 {
@@ -10,16 +8,7 @@ namespace InputHandling.InputStrategies
         InputBindings,
         CustomLogic
     }
-    
-    [Serializable]
-    public struct InputBindings
-    {
-       public InputAction moveLeftAction;
-       public InputAction moveRightAction;
-       public InputAction moveForwardAction; 
-       public InputAction moveBackwardAction;
-    }
-    
+
     public abstract class InputStrategy : ScriptableObject
     {
         public InputStrategyType InputStrategyType { get; protected set; }
